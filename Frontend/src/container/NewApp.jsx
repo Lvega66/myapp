@@ -61,7 +61,15 @@ render() {
           <div>
             <button onClick={this.fetchMethod}>Fetch Data</button>
           </div>
-          <div>
+          <div style={
+            {
+              display: 'flex', 
+              flexDirection: 'row', 
+              justifyContent:'space-around', 
+              flexFlow: 'wrap'
+            }
+          }
+          >
             {
               this.state.todoList.map( (element) => {
                 console.log("La lista es: ", element)
